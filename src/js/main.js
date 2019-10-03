@@ -25,8 +25,6 @@ $(document).ready(function () {
         modal.removeClass('modal_active');
     });
 
-
-
     // $('h1').click(function () {
     //     alert('Ты кликнул по заголовку');
     // });
