@@ -1,0 +1,59 @@
+.footer
+    position: relative
+.map
+    position: absolute
+    width: 50%
+    top: 0
+    left: 0
+.contacts
+    flex-basis: 50%
+    padding-top: 100px
+    padding-left: 200px
+    &__title
+        font-size: 22px
+        line-height: 1.4
+        margin-bottom: 100px
+        +bold
+    &-block
+        display: flex
+        justify-content: flex-end
+    &-list
+        padding: 0
+        list-style: none
+        &__icon
+            width: 20px
+            height: 20px
+            text-align: center
+            line-height: 20px
+            margin-right: 23px
+        &__item
+            display: flex
+            align-items: flex-start
+            margin-bottom: 39px
+            line-height: 1.4
+            color: $text-color
+.bold
+    +bold
+    &__a
+        text-decoration: none
+        color: $text-color
+@media ( max-width: 768px)
+    .footer
+        display: flex
+        flex-direction: column-reverse
+    .map
+        display: block
+        width: 100%
+        position: relative
+    .contacts
+        padding-left: 38px
+        padding-top: 40px
+        padding-bottom: 25px
+        &-block
+            display: block
+            width: 100%
+            position: relative
+        &__title
+            font-size: 18px
+            min-width: 240px
+            max-width: 447px

@@ -1,0 +1,43 @@
+.spec
+    &__title
+        max-width: 651px
+        margin: auto
+        margin-bottom: 58px
+    &__subtitle
+        margin-bottom: 59px
+        text-align: center
+.cards-spec
+    display: flex
+    justify-content: space-between
+.card
+    &-spec
+        &__image
+            border: 2px solid $main-color
+            border-radius: 50%
+            width: 70px
+            height: 70px
+            margin: 0 auto
+            padding: 15px
+        &__text
+            max-width: 53px
+            max-width: 149px
+            text-align: center
+            font-size: 14px
+            margin-top: 17px
+@media ( max-width: 800px)
+    .card
+        &-spec
+            &__text
+                font-size: 11px
+@media ( max-width: 768px)
+    .cards-spec
+        flex-direction: column
+    .card-spec__text
+        font-size: 14px
+        margin-left: 212px
+        margin-bottom: 27px
+
+    .spec
+        &__title
+            font-size: 18px
+            max-width: 249px

@@ -593,7 +593,7 @@ img {
 }
 
 .interview {
-  padding-right: 70px;
+  padding-right: 58px;
 }
 
 .interview__title {
@@ -704,6 +704,252 @@ img {
   }
   .brif__form {
     margin-top: 80px;
+  }
+}
+
+/*Стили подвала*/
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  width: 50%;
+  top: 0;
+  left: 0;
+}
+
+.contacts {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+.contacts__title {
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+  line-height: 1.4;
+  color: #333333;
+}
+
+.bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.bold__a {
+  text-decoration: none;
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .map {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  .contacts {
+    padding-left: 38px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  .contacts-block {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  .contacts__title {
+    font-size: 18px;
+    min-width: 240px;
+    max-width: 447px;
+  }
+}
+
+/*Стили для блока спец*/
+.spec__title {
+  max-width: 651px;
+  margin: auto;
+  margin-bottom: 58px;
+}
+
+.spec__subtitle {
+  margin-bottom: 59px;
+  text-align: center;
+}
+
+.cards-spec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-spec__image {
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.card-spec__text {
+  max-width: 53px;
+  max-width: 149px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 17px;
+}
+
+@media (max-width: 800px) {
+  .card-spec__text {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-spec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-spec__text {
+    font-size: 14px;
+    margin-left: 212px;
+    margin-bottom: 27px;
+  }
+  .spec__title {
+    font-size: 18px;
+    max-width: 249px;
+  }
+}
+
+/*Стили блока билет*/
+.billet {
+  background-color: #ffd200;
+}
+
+.billet__title {
+  text-align: center;
+  font-size: 32px;
+  max-width: 920px;
+  font-weight: 400;
+  margin: auto;
+  line-height: 50px;
+}
+
+@media (max-width: 768px) {
+  .billet__title {
+    font-size: 25px;
+  }
+}
+
+/*стили для блока условий*/
+.cards-curcs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 85px;
+}
+
+.card-curcs__img {
+  width: 287px;
+  height: 224px;
+  margin-right: 17px;
+}
+
+.card-curcs__image {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-curcs__text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  max-width: 281px;
+  margin-bottom: 4px;
+  margin-left: 3px;
+}
+
+@media (max-width: 1200px) {
+  .cards-curcs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .card-curcs__img {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-curcs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: flex-center;
+        -ms-flex-pack: flex-center;
+            justify-content: flex-center;
+  }
+  .card-curcs__img {
+    margin-bottom: 30px;
+  }
+  .card-curcs__text {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

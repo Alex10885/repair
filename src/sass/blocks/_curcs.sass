@@ -1,0 +1,38 @@
+.cards-curcs
+    display: flex
+    justify-content: center
+    margin-left: 85px
+.card
+    &-curcs
+        &__img
+            width: 287px
+            height: 224px
+            margin-right: 17px
+        &__image
+            align-items: center
+        &__text
+            font-size: 15px
+            font-weight: 400
+            line-height: 23px
+            max-width: 281px
+            margin-bottom: 4px
+            margin-left: 3px
+
+@media ( max-width: 1200px)
+    .cards-curcs
+        flex-wrap: wrap
+        justify-content: flex-start
+    .card
+        &-curcs
+            &__img
+                margin-bottom: 30px
+@media ( max-width: 768px)
+    .cards-curcs
+        flex-wrap: wrap
+        justify-content: flex-center
+    .card
+        &-curcs
+            &__img
+                margin-bottom: 30px
+            &__text
+                font-size: 14px
