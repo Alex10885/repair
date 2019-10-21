@@ -952,4 +952,102 @@ img {
     font-size: 14px;
   }
 }
+
+/*стили блока гарантии*/
+.guerantee__title {
+  margin: auto;
+  max-width: 642px;
+  margin-bottom: 108px;
+}
+
+.cards-gueranree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-guerantee__image {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-guerantee__img {
+  -webkit-box-shadow: 4px 1px 36px 18px rgba(0, 0, 0, 0.14);
+          box-shadow: 4px 1px 36px 18px rgba(0, 0, 0, 0.14);
+}
+
+.card-guerantee__text {
+  max-width: 289px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-left: -33px;
+  margin-top: 63px;
+}
+
+.card-guerantee__text__1 {
+  margin-top: 50px;
+}
+
+.card-guerantee__text__3 {
+  margin-top: 55px;
+}
+
+@media (max-width: 1200px) {
+  .cards-guerantee {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .card-guerantee__text {
+    margin-left: -11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .guerantee__title {
+    font-size: 18px;
+    max-width: 421px;
+  }
+  .cards-gueranree {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: flex-center;
+        -ms-flex-pack: flex-center;
+            justify-content: flex-center;
+  }
+  .cards-gueranree .card-guerantee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+  }
+  .cards-gueranree .card-guerantee__img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .cards-gueranree .card-guerantee__text {
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 23px;
+    margin-left: -75px;
+    margin: 0;
+    max-width: 222px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

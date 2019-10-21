@@ -1,0 +1,56 @@
+.guerantee__title
+    margin: auto
+    max-width: 642px
+    margin-bottom: 108px
+.cards-gueranree
+    display: flex
+    justify-content: space-around
+.card
+    &-guerantee
+        &__image
+            align-items: center
+        &__img
+            box-shadow: 4px 1px 36px 18px rgba(0,0,0,0.14)
+        &__text
+            max-width: 289px
+            font-size: 18px
+            font-weight: 400
+            line-height: 24px
+            text-align: center
+            margin-left: -33px
+            margin-top: 63px
+            &__1
+                margin-top: 50px
+            &__3
+                margin-top: 55px
+@media ( max-width: 1200px)
+    .cards-guerantee
+        flex-wrap: wrap
+        justify-content: flex-start
+    .card
+        &-guerantee
+            &__text
+                margin-left: -11px
+@media ( max-width: 768px)
+    .guerantee__title
+        font-size: 18px
+        max-width: 421px
+    .cards-gueranree
+        flex-direction: column
+        justify-content: flex-center
+        .card
+            &-guerantee
+                display: flex
+                flex-direction: column
+                justify-content: center
+                margin: auto
+                &__img
+                    margin-top: 30px
+                    margin-bottom: 30px
+                &__text
+                    font-size: 14px
+                    margin-top: 50px
+                    margin-bottom: 23px
+                    margin-left: -75px
+                    margin: 0
+                    max-width: 222px
